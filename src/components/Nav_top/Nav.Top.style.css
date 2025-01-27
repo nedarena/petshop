@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-title {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.logo-subtitle {
+    font-size: 15px;
+    font-family: var(--ff-m);
+    color: var(--text-light);
+}
+
+.header__contact {
+    text-align: right;
+}
+
+.contact-title {
+    color: var(--text-light);
+    font-family: var(--ff-m);
+    font-size: 15px;
+}
+
+.contact-number {
+    font-size: 19px;
+}
+
+.header__search {
+    outline: none;
+    font-family: var(--ff-m);
+    border: 1px solid #EAEAEA;
+    border-radius: 4px;
+    width: 36%;
+    height: 50px;
+    color: var(--text-light);
+    font-size: 15px;
+    padding: 25px;
+}

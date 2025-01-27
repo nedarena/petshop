@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li, ul {
+    list-style-type: none;
+    color: var(--text-default);
+    cursor: pointer;
+}
+
+:root {
+    --text-default: #41403E;
+    --text-light: #A3A2A1;
+    --ff-m: "Montserrat", serif;
+    --ff-c: "Chilanka", serif;
+}
+
+body {
+    font-family: var(--ff-c);
+    color: var(--text-default);
+}
+
+.container {
+    margin: 0 16%;
+}

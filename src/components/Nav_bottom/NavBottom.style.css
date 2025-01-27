@@ -1,0 +1,30 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+select {
+    border: none;
+    background: none;
+    font-family: var(--ff-c);
+    font-size: 19px;
+}
+
+option {
+    font-family: var(--ff-c);
+}
+
+.menu__list {
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.menu__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 12%;
+}

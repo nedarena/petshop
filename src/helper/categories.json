@@ -1,0 +1,24 @@
+{
+    "categories": [
+        {
+            "img": "../image/icon/category1.svg",
+            "text": "Accessories"
+        },
+        {
+            "img": "../image/icon/category2",
+            "text": "Bird Shop"
+        },
+        {
+            "img": "../image/icon/category3",
+            "text": "Dog Shop"
+        },
+        {
+            "img": "../image/icon/category4",
+            "text": "Fish Shop"
+        },
+        {
+            "img": "../image/icon/category5",
+            "text": "Cat Shop"
+        }
+    ]
+}
