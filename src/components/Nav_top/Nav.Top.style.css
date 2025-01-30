@@ -35,4 +35,5 @@
     color: var(--text-light);
     font-size: 15px;
     padding: 25px;
+    width: 100%;
 }
