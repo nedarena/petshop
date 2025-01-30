@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './Foodies.style.css';
 import Btn from '../Btn/Btn';
 import CardProduct from '../CardProduct/CardProduct';
@@ -5,57 +6,72 @@ import CardProduct from '../CardProduct/CardProduct';
 const cardData = [
     {
         image: '/cardProducts/Product5.png',
-        title: 'fresh kisses'
+        title: 'fresh kisses',
+        category: 'cat'
     },
     {
         image: '/cardProducts/Product6.png',
-        title: 'pate butcher`s'
+        title: 'pate butcher`s',
+        category: 'dog'
     },
     {
         image: '/cardProducts/Product7.png',
-        title: 'pulsitos'
+        title: 'pulsitos',
+        category: 'bird'
     },
     {
         image: '/cardProducts/Product8.png',
-        title: 'pate butcher`s'
+        title: 'butcher`s pate',
+        category: 'dog'
     },
     {
         image: '/cardProducts/Product9.png',
-        title: 'chicken treats'
+        title: 'chicken treats',
+        category: 'cat'
     },
     {
         image: '/cardProducts/Product10.png',
-        title: 'love corn'
+        title: 'love corn',
+        category: 'cat'
     },
     {
         image: '/cardProducts/Product11.png',
-        title: 'pate butcher`s'
+        title: 'butcher`s dogs',
+        category: 'dog'
     },
     {
         image: '/cardProducts/Product12.png',
-        title: 'winiary'
+        title: 'winiary',
+        category: 'bird'
     },
 ];
 
 const Foodies = () => {
+    const [activeFilter, setActiveFilter] = useState('all'); // Состояние для хранения активного фильтра
+    const handleClick = (filter) => {
+        setActiveFilter(filter); // Меняем активный фильтр при клике
+    };
+
+    const filteredCards = activeFilter === 'all' ? cardData : cardData.filter(card => card.category === activeFilter);
+
     return ( 
         <div className='Foodies container'>
             <div className="foodies__title">
                 <p className="foodies__title-text">Pet Foodies</p>
                 <div className="foodies__nav">
-                    <li className="foodies__nav-item foodies__nav-item-active">all</li>
-                    <li className="foodies__nav-item">cat</li>
-                    <li className="foodies__nav-item">dog</li>
-                    <li className="foodies__nav-item">bird</li>
+                    <li className={`foodies__nav-item ${activeFilter === 'all' ? 'foodies__nav-item-active' : ''}`} onClick={() => handleClick('all')}>all</li>
+                    <li className={`foodies__nav-item ${activeFilter === 'cat' ? 'foodies__nav-item-active' : ''}`} onClick={() => handleClick('cat')}>cat</li>
+                    <li className={`foodies__nav-item ${activeFilter === 'dog' ? 'foodies__nav-item-active' : ''}`} onClick={() => handleClick('dog')}>dog</li>
+                    <li className={`foodies__nav-item ${activeFilter === 'bird' ? 'foodies__nav-item-active' : ''}`} onClick={() => handleClick('bird')}>bird</li>
                 </div>
                 <Btn text={'shop all \u2192'}/>
             </div>
             <div className="foodies__products">
-                {cardData.map(item => (
+                {filteredCards.map(item => (
                     <div key={item.title}>
                         <CardProduct
-                        image={item.image}
-                        title={item.title}
+                            image={item.image}
+                            title={item.title}
                         />
                     </div>
                 ))}
