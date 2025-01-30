@@ -1,0 +1,43 @@
+
+
+.slider {
+    height: 100vh;
+    background: var(--bg);
+    padding-top: 10px;
+}
+
+.slider-container {
+    width: 50%;
+    margin: auto;
+}
+
+.slide-item { 
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide-image { 
+    width: 90%;
+    object-fit: contain;
+}
+
+.slide-content { 
+    padding: 1.5rem;
+    width: 50%;
+    font-weight: 600; 
+    display: block !important;
+}
+
+.content__subtitle {
+    font-family: var(--ff-m);
+    font-size: 18px;
+    color: var(--text-peach);
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.content__title {
+    font-size: 88px;
+    text-transform: capitalize;
+}

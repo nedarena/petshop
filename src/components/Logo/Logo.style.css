@@ -1,0 +1,16 @@
+.Logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-title {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.logo-subtitle {
+    font-size: 15px;
+    font-family: var(--ff-m);
+    color: var(--text-light);
+}

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 
 * {
     padding: 0;
@@ -15,13 +17,18 @@ li, ul {
 :root {
     --text-default: #41403E;
     --text-light: #A3A2A1;
+    --bg: #F9F3EC;
+    --text-peach: #DEAD6F;
+    --gray: #908F8D;
+    --text-gray: #D9D9D8;
     --ff-m: "Montserrat", serif;
-    --ff-c: "Chilanka", serif;
+    --ff-c: "Chilanka", "Comfortaa", serif;
 }
 
 body {
     font-family: var(--ff-c);
     color: var(--text-default);
+    overflow: hidden scroll;
 }
 
 .container {

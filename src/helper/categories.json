@@ -1,23 +1,23 @@
 {
     "categories": [
         {
-            "img": "../image/icon/category1.svg",
+            "img": "category1.svg",
             "text": "Accessories"
         },
         {
-            "img": "../image/icon/category2",
+            "img": "category2.svg",
             "text": "Bird Shop"
         },
         {
-            "img": "../image/icon/category3",
+            "img": "category3.svg",
             "text": "Dog Shop"
         },
         {
-            "img": "../image/icon/category4",
+            "img": "category4.svg",
             "text": "Fish Shop"
         },
         {
-            "img": "../image/icon/category5",
+            "img": "category5.svg",
             "text": "Cat Shop"
         }
     ]

@@ -1,0 +1,25 @@
+.carousel__block {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 0 16%;
+}
+
+.carousel__block img {
+    width: 30%;
+}
+
+.content__subtitle {
+    font-family: var(--ff-m);
+    font-size: 18px;
+    color: var(--text-peach);
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.content__title {
+    font-size: 50px !important;
+    text-transform: capitalize !important;
+    font-family: var(--ff-c);
+    padding: 20px 0 30px 0;
+}

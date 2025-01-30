@@ -1,0 +1,35 @@
+.CarouselReviewsSlide {
+    padding: 0 22%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.quote__block {
+}
+
+.quote {
+    font-size: 600px;
+    font-family: "Syne", serif;
+    color: #F7EEE4;
+    height: 300px;
+    object-fit: cover;
+    vertical-align: top;
+    display: inline;
+}
+
+.rewiews__block {
+}
+
+.rewiews__text {
+    font-size: 36px;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+.rewiews__autor {
+    font-size: 15px;
+    font-family: var(--ff-m);
+    color: var(--text-default);
+    font-weight: 500;
+}

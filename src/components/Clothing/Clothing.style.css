@@ -1,0 +1,16 @@
+.Clothing {
+    padding: 50px 0;
+}
+.clothing__title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.clothing__title-text {
+    font-size: 55px;
+}
+.clothing__products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}

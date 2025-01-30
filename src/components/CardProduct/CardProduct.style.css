@@ -1,0 +1,60 @@
+.clothing__products__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.products__card-img {
+    width: 100%;
+    border-radius: 10px;
+}
+.products__card-title {
+    font-size: 26px;
+    text-transform: capitalize;
+}
+.products__card-rating {
+    display: flex;
+    gap: 5px;
+}
+
+.products__card-rating-number {
+    font-family: var(--ff-m);
+    color: var(--gray);
+    font-size: 15px;
+}
+.products__card-price {
+    color: var(--text-peach);
+    font-family: var(--ff-m);
+    font-weight: lighter;
+    font-size: 26px;
+}
+.products__card-btns {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.btn-products {
+    border-radius: 4px;
+    border: 1px solid rgba(65, 64, 62, 0.2);
+    padding: 20px 32px;
+    background: transparent;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: var(--ff-c);
+    cursor: pointer;
+}
+
+.btn-mini {
+    padding: 18px 18px;
+}
+
+.btn-img-heart {
+    height: 15px;
+}
+
+.products__card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 18px 0;
+}

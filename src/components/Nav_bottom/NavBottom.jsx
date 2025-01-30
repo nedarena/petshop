@@ -1,19 +1,22 @@
 import './NavBottom.style.css'
-import person from '../../image/icon/ion_person.svg';
-import heart from '../../image/icon/ion_heart.svg';
-import basket from '../../image/icon/basket.svg';
+import person from '../../assets/icon/ion_person.svg';
+import heart from '../../assets/icon/ion_heart.svg';
+import basket from '../../assets/icon/basket.svg';
 
 const NavBottom = () => {
     return ( 
         <div className="menu container">
                 <select name="category" id="categories" className="select__category">
                     <option value="title">Shop by categories</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                    <option value="1">All</option>
+                    <option value="2">Accessories</option>
+                    <option value="3">Bird Shop</option>
+                    <option value="4">Dog Shop</option>
+                    <option value="5">Fish Shop</option>
+                    <option value="6">Cat Shop</option>
                 </select>
                 <nav className='menu__list'>
-                    <li className="menu__list-item">Home</li>
+                    <li className="menu__list-item menu__list-item-active">Home</li>
                     <li className="menu__list-item">Page</li>
                     <li className="menu__list-item">Shop</li>
                     <li className="menu__list-item">Blog</li>

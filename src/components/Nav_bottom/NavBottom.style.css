@@ -22,6 +22,10 @@ option {
     width: 40%;
 }
 
+.menu__list-item-active {
+    color: var(--text-peach);
+}
+
 .menu__icons {
     display: flex;
     justify-content: space-between;

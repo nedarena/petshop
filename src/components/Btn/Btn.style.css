@@ -1,0 +1,15 @@
+.btn {
+    border-radius: 4px;
+    border: 1px solid var(--text-default);
+    padding: 20px 40px;
+    background: transparent;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-family: var(--ff-c);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background: #f7eadb;
+}

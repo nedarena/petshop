@@ -1,0 +1,32 @@
+.Foodies {
+    padding: 50px 0;
+}
+
+.foodies__products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 45px 20px;
+}
+.foodies__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.foodies__title-text {
+    font-size: 55px;
+}
+.foodies__nav {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.foodies__nav-item {
+    text-transform: uppercase;
+    font-size: 17px;
+    border-bottom: 2px solid var(--text-gray); 
+}
+
+.foodies__nav-item-active {
+    border-bottom: 2px solid var(--text-peach);
+}

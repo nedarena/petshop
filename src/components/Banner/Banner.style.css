@@ -1,0 +1,30 @@
+.bg {
+    background: var(--bg);
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+}
+
+.banner__text {
+}
+
+.banner__info-sale {
+    color: var(--text-peach);
+    font-family: var(--ff-m);
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.banner__title {
+    font-size: 75px;
+    text-transform: uppercase;
+    margin: 10px 0 20px 0;
+}
+
+.banner__img{
+    width: 50%;
+}
