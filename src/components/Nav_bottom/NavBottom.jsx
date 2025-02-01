@@ -2,6 +2,7 @@ import './NavBottom.style.css'
 import person from '../../assets/icon/ion_person.svg';
 import heart from '../../assets/icon/ion_heart.svg';
 import basket from '../../assets/icon/basket.svg';
+import { NavLink } from 'react-router-dom';
 
 const NavBottom = () => {
     return ( 
@@ -16,7 +17,10 @@ const NavBottom = () => {
                     <option value="6">Cat Shop</option>
                 </select>
                 <nav className='menu__list'>
-                    <li className="menu__list-item menu__list-item-active">Home</li>
+                    <NavLink to={'/'} className={({isActive}) => isActive ? 'menu__list-item-active' : ''}>
+                        <li className="menu__list-item menu__list-item-active">Home</li>
+                    </NavLink>
+                    
                     <li className="menu__list-item">Page</li>
                     <li className="menu__list-item">Shop</li>
                     <li className="menu__list-item">Blog</li>
@@ -26,7 +30,9 @@ const NavBottom = () => {
                 <div className="menu__icons">
                     <img src={person} alt="person" />
                     <img src={heart} alt="heart" />
-                    <img src={basket} alt="basket" />
+                    <NavLink to='/cart'>
+                        <img src={basket} alt="basket" />
+                    </NavLink>
                 </div>
         </div>
     );

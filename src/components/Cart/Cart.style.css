@@ -1,0 +1,10 @@
+.cart {
+    background: var(--bg);
+    padding: 100px 16%;
+}
+
+.cart__title {
+    font-size: 55px;
+    text-align: center;
+    padding-bottom: 40px;
+}

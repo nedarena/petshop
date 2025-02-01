@@ -1,0 +1,10 @@
+.cart__footer {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 3fr) 1fr;
+    justify-items: center;
+    padding: 20px 0;
+    background: var(--text-peach);
+    font-family: var(--ff-m);
+    font-weight: 500;
+    font-size: 20px;
+}

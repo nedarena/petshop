@@ -1,0 +1,16 @@
+.cart__header {
+    font-family: var(--ff-m);
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 3fr) 1fr;
+    justify-items: center;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    background: var(--text-peach);
+    padding: 20px 0;
+}
+
+.cart__header > * {
+    align-items: center;
+}

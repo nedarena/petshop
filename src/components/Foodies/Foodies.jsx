@@ -7,41 +7,50 @@ const cardData = [
     {
         image: '/cardProducts/Product5.png',
         title: 'fresh kisses',
-        category: 'cat'
+        category: 'cat',
+        price: 38,
+        incart: false
     },
     {
         image: '/cardProducts/Product6.png',
         title: 'pate butcher`s',
+        price: 18,
         category: 'dog'
     },
     {
         image: '/cardProducts/Product7.png',
         title: 'pulsitos',
+        price: 15,
         category: 'bird'
     },
     {
         image: '/cardProducts/Product8.png',
         title: 'butcher`s pate',
+        price: 43,
         category: 'dog'
     },
     {
         image: '/cardProducts/Product9.png',
         title: 'chicken treats',
+        price: 18,
         category: 'cat'
     },
     {
         image: '/cardProducts/Product10.png',
         title: 'love corn',
+        price: 18,
         category: 'cat'
     },
     {
         image: '/cardProducts/Product11.png',
         title: 'butcher`s dogs',
+        price: 18,
         category: 'dog'
     },
     {
         image: '/cardProducts/Product12.png',
         title: 'winiary',
+        price: 18,
         category: 'bird'
     },
 ];
@@ -72,6 +81,7 @@ const Foodies = () => {
                         <CardProduct
                             image={item.image}
                             title={item.title}
+                            price={item.price}
                         />
                     </div>
                 ))}

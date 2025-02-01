@@ -1,28 +1,22 @@
 import './App.css';
 import Nav from './components/Nav/Nav';
-import Categories from './components/Categories/Categories';
-import Banner from './components/Banner/Banner';
-import Carousel from './components/Carousel/Carousel';
-import Clothing from './components/Clothing/Clothing';
-import Foodies from './components/Foodies/Foodies';
-import Register from './components/Register/Register';
-import BannerInst from './components/BannerInst/BannerInst';
 import Footer from './components/Footer/Footer';
-import CarouselReviews from './components/CarouselReviews/CarouselReviews';
+import Home from './components/Home/Home';
+import Cart from './components/Cart/Cart';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Nav/>
-      <Carousel/>
-      <Categories/>
-      <Clothing/>
-      <Foodies/>
-      <Banner/>
-      <CarouselReviews/>
-      <Register/>
-      <BannerInst/>
-      <Footer/>
+        <Router>
+            <Nav/>
+            <Routes>
+                <Route path='/' element={<Home/>}/>
+                <Route path='/cart' element={<Cart/>}/>
+            </Routes>
+            <Footer/>
+        </Router>
+        
     </div>
   );
 }

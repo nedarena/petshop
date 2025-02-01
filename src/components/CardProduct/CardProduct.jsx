@@ -2,7 +2,7 @@ import './CardProduct.style.css';
 import stars from './../../assets/icon/Ratings.svg';
 import heart from './../../assets/icon/ion_heart.svg';
 
-const CardProduct = ({image, title}) => {
+const CardProduct = ({image, title, price}) => {
     return ( 
         <div className="clothing__products__card">
             <img src={image} alt="" className='products__card-img'/>
@@ -13,7 +13,7 @@ const CardProduct = ({image, title}) => {
                     <img src={stars} alt="" className="products__card-rating-stars" />
                     <p className="products__card-rating-number">5.0</p>
                 </div>
-                <p className="products__card-price">&#36; 18.00</p>
+                <p className="products__card-price">&#36; {price}.00</p>
             </div>
                             
             <div className="products__card-btns">
