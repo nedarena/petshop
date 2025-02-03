@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 const NavBottom = () => {
     return ( 
-        <div className="menu container">
+        <div className="menu">
                 <select name="category" id="categories" className="select__category">
                     <option value="title">Shop by categories</option>
                     <option value="1">All</option>

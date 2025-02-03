@@ -4,6 +4,7 @@
     justify-items: center;
     padding: 20px 0;
     background: var(--text-peach);
+    /* background: var(--text-gray); */
     font-family: var(--ff-m);
     font-weight: 500;
     font-size: 20px;

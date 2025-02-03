@@ -2,6 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 16% 20px 16%;
+    /* margin-bottom: 20px; */
+    position: sticky;
+    background: #fff;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #EDEDED;
 }
 
 select {
