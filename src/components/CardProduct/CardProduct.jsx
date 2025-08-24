@@ -2,7 +2,16 @@ import './CardProduct.style.css';
 import stars from './../../assets/icon/Ratings.svg';
 import heart from './../../assets/icon/ion_heart.svg';
 
-const CardProduct = ({image, title, price}) => {
+const CardProduct = ({id, image, title, price, onAddToCart}) => {
+    const handleAddToCart = () => {
+        onAddToCart({
+          id,
+          image,
+          title,
+          price,
+        })
+    }
+
     return ( 
         <div className="clothing__products__card">
             <img src={image} alt="" className='products__card-img'/>
@@ -17,7 +26,7 @@ const CardProduct = ({image, title, price}) => {
             </div>
                             
             <div className="products__card-btns">
-                <button className="btn-products">Add to cart</button>
+                <button className="btn-products" onClick={handleAddToCart}>Add to cart</button>
                 <button className='btn-products btn-mini'><img src={heart} alt="" className='btn-img-heart'/></button>
             </div>
         </div>

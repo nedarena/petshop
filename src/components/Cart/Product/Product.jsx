@@ -1,21 +1,27 @@
-import './Product.style.css';
-import img from './../../../assets/Product1.png'
-import ButtonDelete from '../ButtonDelete/ButtonDelete';
+import "./Product.style.css"
+import ButtonDelete from "../ButtonDelete/ButtonDelete"
+import QuantityControl from "./QuantityControl/QuantityControl"
 
-const Product = () => {
-    return ( 
-        <section className="product">
-            <div className="product__img">
-                <img src={img} alt="dghg" className=""/>
-            </div>
-            <div className="product__title">dfgdfg</div>
-            <div className="product__count">5 шт</div>
-            <div className="product__price">50 руб.</div>
-            <div className="product__controls">
-                <ButtonDelete/>
-            </div>
-        </section>
-     );
+const Product = ({ product, quantity, onDelete, onUpdateQuantity }) => {
+  return (
+    <section className="product">
+      <div className="product__img">
+        <img src={product.image || "/placeholder.svg"} alt={product.title} />
+      </div>
+      <div className="product__title">{product.title}</div>
+      <div className="product__count">
+        <QuantityControl
+          quantity={quantity}
+          onIncrease={() => onUpdateQuantity(product.id, quantity + 1)}
+          onDecrease={() => onUpdateQuantity(product.id, quantity - 1)}
+        />
+      </div>
+      <div className="product__price">{product.price * quantity}.00 $</div>
+      <div className="product__controls">
+        <ButtonDelete onDelete={onDelete} id={product.id} />
+      </div>
+    </section>
+  )
 }
- 
-export default Product;
+
+export default Product

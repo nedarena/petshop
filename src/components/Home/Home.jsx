@@ -7,13 +7,17 @@ import CarouselReviews from './../CarouselReviews/CarouselReviews';
 import Register from './../Register/Register';
 import BannerInst from './../BannerInst/BannerInst';
 
-const Home = () => {
+const Home = ({onAddToCart}) => {
     return ( 
         <>
         <Carousel/>
         <Categories/>
-        <Clothing/>
-        <Foodies/>
+        <Clothing
+            onAddToCart={onAddToCart}
+        />
+        <Foodies
+            onAddToCart={onAddToCart}
+        />
         <Banner/>
         <CarouselReviews/>
         <Register/>

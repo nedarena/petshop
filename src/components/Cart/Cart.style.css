@@ -8,3 +8,8 @@
     text-align: center;
     padding-bottom: 40px;
 }
+
+.cart__message {
+    display: flex;
+    justify-content: center;
+}

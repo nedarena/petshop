@@ -1,0 +1,52 @@
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quantity-value {
+  min-width: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-family: var(--ff-c);
+}
+
+.quantity-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.quantity-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(65, 64, 62, 0.2);
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.quantity-button:hover:not(:disabled) {
+  background-color: rgba(65, 64, 62, 0.05);
+  border-color: rgba(65, 64, 62, 0.4);
+}
+
+.quantity-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantity-button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.quantity-icon {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+}

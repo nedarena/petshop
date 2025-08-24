@@ -5,6 +5,7 @@ import CardProduct from '../CardProduct/CardProduct';
 
 const cardData = [
     {
+        id: 5,
         image: '/cardProducts/Product5.png',
         title: 'fresh kisses',
         category: 'cat',
@@ -12,42 +13,49 @@ const cardData = [
         incart: false
     },
     {
+        id: 6,
         image: '/cardProducts/Product6.png',
         title: 'pate butcher`s',
         price: 18,
         category: 'dog'
     },
     {
+        id: 7,
         image: '/cardProducts/Product7.png',
         title: 'pulsitos',
         price: 15,
         category: 'bird'
     },
     {
+        id: 8,
         image: '/cardProducts/Product8.png',
         title: 'butcher`s pate',
         price: 43,
         category: 'dog'
     },
     {
+        id: 9,
         image: '/cardProducts/Product9.png',
         title: 'chicken treats',
         price: 18,
         category: 'cat'
     },
     {
+        id: 10,
         image: '/cardProducts/Product10.png',
         title: 'love corn',
         price: 18,
         category: 'cat'
     },
     {
+        id: 11,
         image: '/cardProducts/Product11.png',
         title: 'butcher`s dogs',
         price: 18,
         category: 'dog'
     },
     {
+        id: 12,
         image: '/cardProducts/Product12.png',
         title: 'winiary',
         price: 18,
@@ -55,7 +63,7 @@ const cardData = [
     },
 ];
 
-const Foodies = () => {
+const Foodies = ({ onAddToCart}) => {
     const [activeFilter, setActiveFilter] = useState('all'); // Состояние для хранения активного фильтра
     const handleClick = (filter) => {
         setActiveFilter(filter); // Меняем активный фильтр при клике
@@ -79,9 +87,11 @@ const Foodies = () => {
                 {filteredCards.map(item => (
                     <div key={item.title}>
                         <CardProduct
+                            id={item.id}
                             image={item.image}
                             title={item.title}
                             price={item.price}
+                            onAddToCart={onAddToCart}
                         />
                     </div>
                 ))}

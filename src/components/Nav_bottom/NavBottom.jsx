@@ -17,9 +17,11 @@ const NavBottom = () => {
                     <option value="6">Cat Shop</option>
                 </select>
                 <nav className='menu__list'>
-                    <NavLink to={'/'} className={({isActive}) => isActive ? 'menu__list-item-active' : ''}>
-                        <li className="menu__list-item menu__list-item-active">Home</li>
-                    </NavLink>
+                    <li>
+                        <NavLink to={'/'} className={({isActive}) => isActive ? 'menu__list-item-active' : 'menu__list-item'}>
+                            Home
+                        </NavLink>
+                    </li>
                     
                     <li className="menu__list-item">Page</li>
                     <li className="menu__list-item">Shop</li>
@@ -28,8 +30,8 @@ const NavBottom = () => {
                     <li className="menu__list-item">Offers</li>
                 </nav>
                 <div className="menu__icons">
-                    <img src={person} alt="person" />
-                    <img src={heart} alt="heart" />
+                    <img src={person} alt="person" className='menu__icon__img'/>
+                    <img src={heart} alt="heart" className='menu__icon__img'/>                    
                     <NavLink to='/cart'>
                         <img src={basket} alt="basket" />
                     </NavLink>

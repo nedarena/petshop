@@ -29,13 +29,28 @@ option {
     width: 40%;
 }
 
+.menu__list-item {
+    text-decoration: none;
+}
+
 .menu__list-item-active {
+    text-decoration: none;
     color: var(--text-peach);
 }
 
 .menu__icons {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     width: 12%;
+}
+
+.menu__icons__nav-link {
+    width: 22px;
+    height: 22px;
+    position: relative;
+}
+
+.select__category {
+    cursor: pointer;
 }
